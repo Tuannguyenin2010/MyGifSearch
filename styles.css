@@ -1,0 +1,62 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding-top: 80px; /* Adds padding to push everything slightly from the top */
+    text-align: center; /* Center text in the body */
+}
+
+/* Style for the heading */
+h1 {
+    color: #00008b; 
+    margin-bottom: 10px; /* Reduced space below the heading */
+}
+
+/* Wrapper for search input and button to position them under the heading */
+.search-wrapper {
+    display: inline-block; /* Keeps search input and button inline */
+    margin-bottom: 20px; /* Space between search section and GIF container */
+}
+
+/* Style for the input box */
+#searchInput {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px; 
+}
+
+/* Style for the search button */
+#searchButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background-color: #0056b3;
+}
+
+/* The container that holds the GIFs, with a border */
+#gifContainer {
+    margin: 20px auto; /* Center the container horizontally */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Align GIFs to the center */
+    width: 80%; /* Adjust width as needed */
+    max-width: 800px; /* Maximum width to centralize it */
+    border: 2px solid #00008b; /* Dark blue border */
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+/* Style for each GIF item */
+.gif-item {
+    margin: 10px;
+}

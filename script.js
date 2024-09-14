@@ -1,7 +1,7 @@
 document.getElementById("searchButton").addEventListener("click", function() {
     const query = document.getElementById("searchInput").value;
     const apiKey = '0wNcEs5P1taGLFXyF0h48nrvxuqerAEL';  
-    const url = `https://api.giphy.com/v1/gifs/search?q=${query}&api_key=${apiKey}&limit=10`;
+    const url = `https://api.giphy.com/v1/gifs/search?q=${query}&api_key=${apiKey}&limit=25`; 
 
     fetch(url)
         .then(response => response.json())
@@ -20,4 +20,3 @@ document.getElementById("searchButton").addEventListener("click", function() {
             console.error('Error fetching the GIFs:', error);
         });
 });
-
